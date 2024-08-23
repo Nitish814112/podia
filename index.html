@@ -1,0 +1,179 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+</head>
+
+<style>
+.mobile-menu {
+      display: none;
+    }
+    .mobile-menu.open {
+      display: block;
+    }
+    .custom-list-circle {
+      list-style-type: circle;
+    }
+    .cir>li{
+        height: 25px;
+        width: 25px;
+        border: 1px solid gray;
+        border-radius: 50%;
+        margin-left: 80px;
+       
+    }
+
+</style>
+<body class="bg-gray-100 ">
+    <nav class="bg-white-800 p-4">
+    <div class="container mx-auto flex justify-evenly items-center">
+<a href="" class="text-black text-2xl font-bold">Frontend Practice</a>
+
+<button id="menu-toggle" class="block md:hidden text-black focus:outline-none">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+    </svg>
+  </button>
+  <!-- Menu Items -->
+  <ul id="menu" class="hidden md:flex space-x-8">
+    <li><a href="" class="text-black-300 font-bold hover:underline">Home</a></li>
+    <li><a href="" class="text-black-300 font-bold hover:underline">Projects</a></li>
+    <li><a href="" class="text-black-300 font-bold hover:underline">Blog</a></li>
+    <li><a href="" class="text-black-300 font-bold hover:underline">FAQ</a></li>
+    <li><a href="" class="text-black-300 font-bold hover:underline">Contact</a></li>
+    <li><a href="" class="text-black-300 font-bold hover:underline">Newsletter <Span>↗</Span></a></li>
+  </ul>
+
+<ul id="id="menu"" class="mobile-menu absolute flex space-x-8">
+<li><a href="" class="text-black-300 font-bold hover:underline">Home</a></li>
+<li><a href="" class="text-black-300 font-bold hover:underline">Projects</a></li>
+<li><a href="" class="text-black-300 font-bold hover:underline">Blog</a></li>
+<li><a href="" class="text-black-300 font-bold  hover:underline">FAQ</a></li>
+<li><a href="" class="text-black-300 font-bold hover:underline">Contact</a></li>
+<li><a href="" class="text-black-300 font-bold hover:underline">Newsletter ↗</a></li>
+
+
+        </ul>
+    </div>
+</nav>
+<hr class="border-t-4 border-black">
+<div class="container mx-auto">
+    <div class="grid">
+      <!-- First Row -->
+      <div class="w-2/3 mx-auto border border-black text-center">
+        <h1 class="text-7xl font-bold">Podia</h1>
+        <h4 class="text-xl font-bold mt-2">Digital products page</h4>
+        <div class="mt-4">
+          <a href="#" class="text-black-500 font-bold md:text-sm  hover:underline mx-2">🌐 View Live</a>
+          <a href="#" class="text-black-500 font-bold md:text-sm hover:underline mx-2">📷 Free Photo Assets</a>
+          <a href="#" class="text-black-500 font-bold md:text-sm md:text-nowrap hover:underline mx-2">⭐ Open Source Icons</a>
+        </div>
+      </div>
+      <!-- Second Row -->
+      <div class="w-2/3 mx-auto text-center">
+        <div class="grid grid-cols-4">
+          <!-- Item 1 -->
+          <div class="border border-black p-4">
+            <h1 class="font-bold">Recreate this <br>to learn:</h1>
+            <ul  class="list-circle  ml-6">
+              <li class="text-sm">Hero section</li>
+              <li class="text-sm">Minimal color palette</li>
+              <li class="text-sm">Dropdown <br> menus</li>
+              <li class="text-sm">Hover effects</li>
+              <li class="text-sm">and more!</li>
+            </ul>
+          </div>
+          <!-- Item 2 -->
+          <div class="border border-black p-4">
+            <h1 class="font-bold">Color Palette:</h1>
+            <ul  class=" cir align-center  ">
+              <li class="  text-sm mt-1 "><span class="ml-7"> #fdfbf9</span>
+               </li>
+              <li class="text-sm mt-1"><span class="ml-7">#ffffff</span></li>
+              <li class="text-sm mt-1 bg-blue-600"> <span class="ml-7"> #4b2aad</span>
+               </li>
+              <li class="text-sm mt-1 bg-purple-400"><span class="ml-7 mt-5"> #9484c6</span>
+               </li>
+                <li class="text-sm mt-1 bg-black"><span class="ml-7">#201445</span>
+                    </li>
+                <li class="text-sm mt-1 bg-orange-100"><span class="ml-7">#f5efeb</span>
+                    </li>
+            </ul>
+          </div>
+          <!-- Item 3 -->
+          <div class="border border-black p-4">
+            <h1 class="font-bold">Recommended Course:</h1>
+            <h6 class="font-bold text-sm">Frontend Masters offers a completely free <a href="#" class="underline text-custom-blue hover:text-black">"Getting Started With CSS"</a> course.</h6>
+          </div>
+          <!-- Item 4 -->
+          <div class="border border-black p-4">
+            <h1 class="font-bold">Resources:</h1>
+            <a href="#" class="underline font-bold text-sm hover:text-custom-blue">Creating a dropdown menu</a>
+            <a href="#" class="underline font-bold text-sm  hover:text-custom-blue">A Complete Guide to Flexbox</a>
+            <a href="#" class="underline font-bold text-sm  hover:text-custom-blue">Accessible accordions</a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  <div class="container mx-auto">
+    <div class="w-2/3 mx-auto border border-black text-center">
+      <!-- Apply the grid classes to create 3 equal columns -->
+      <div class="grid grid-cols-3 gap-4 p-4">
+        <div class="col border border-black bg-black">
+            <h4 class="text-white font-bold mt-4 text-2xl">Up for a challenge?</h4>
+            <h6 class="text-sm text-white mt-5">Implement the dropdown sections in the footer on mobile view.</h6>
+        </div>
+        <div class="col h-25 border border-black bg-gray-700">
+            <h4 class="text-white font-bold mt-4 text-2xl">Too easy?</h4>
+            <h6 class="text-sm text-white mt-5">Recreate the main navigation menu dropdown on mobile view.</h6>
+        </div>
+        <div class="col border border-black">
+            <h4 class="text-black font-bold mt-4 text-2xl">Too hard?</h4>
+            <h6 class="text-sm text-black mt-2">That's ok!</h6>
+            <a href="" class="text-sm text-black mt-5 font-bold underline">View other projects</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container mx-auto" >
+    <div class="w-full md:w-2/3 mx-auto text-center border border-black">
+      <h1 class="text-3xl font-bold mt-6">Reference Image</h1>
+      <div class="relative w-11/12 justify-center pl-9">
+        <!-- Set the image to take full width of the container -->
+        <img src="./C35-podia.webp" alt="Reference Image" class="mt-2 shadow-md w-full">
+        <br>
+        <br>
+      </div>
+    </div>
+  </div>
+  <div class="footer bg-black">
+    <h5 class="text-white text-sm text-center pt-7 font-bold">Frontend Practice - © 2024</h5>
+    <div class="text-center pt-4 gap-12">
+        <a href="#" class="text-white font-bold  hover:underline">Home</a>
+        <a href="#" class="text-white font-bold  hover:underline">Projects</a>
+        <a href="#" class="text-white font-bold  hover:underline">Blog</a>
+        <a href="#" class="text-white font-bold  hover:underline">FAQ</a>
+        <a href="#" class="text-white font-bold  hover:underline">Contact</a><br>
+        <a href="#" class="text-white mr-32 font-bold  hover:underline">Newsletter↗</a>
+        <br><br>
+    </div>
+  </div>
+ 
+
+<script>
+    // JavaScript for toggle functionality
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      const mobileMenu = document.getElementById('mobile-menu');
+      mobileMenu.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>
